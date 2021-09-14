@@ -8,8 +8,7 @@ public class MyMain {
     // Ex. binaryToDecimal("1010") => 10 (ten)
     //     binaryToDecimal("110010") => 50
     public static int binaryToDecimal(String binary) {
-        // REPLACE WITH YOUR CODE
-        return -1;
+        return Integer.parseInt(binary,2);
     }
 
     // Given a decimal number (e.g. 152) as input, and returns a String
@@ -17,13 +16,15 @@ public class MyMain {
     // Ex. decimalToBinary(7) => "111"
     //     decimalToBinary(152) => "10011000"
     public static String decimalToBinary(int decimal) {
-        // REPLACE WITH YOUR CODE
-        return "";
+        return Integer.toBinaryString(decimal);
     }
     
     
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        // YOUR CODE HERE
+        System.out.println("gimme a binary str");
+        System.out.println(binaryToDecimal(scan.next()));
+        System.out.println("gimme a decimal int");
+        System.out.println(decimalToBinary(scan.nextInt()));
     }
 }
